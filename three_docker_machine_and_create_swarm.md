@@ -17,3 +17,9 @@ docker-machine ssh agent2 docker swarm join --token `docker swarm join-token -q 
 ```
 docker node ls
 ```
+
+
+```
+docker-machine stop manager agent1 agent2
+docker-machine rm -f manager agent1 agent2
+```
