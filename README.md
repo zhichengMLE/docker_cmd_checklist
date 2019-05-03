@@ -7,6 +7,14 @@
 docker-machine create -d virtualbox manager1
 ```
 
+or 
+
+```
+docker-machine create manager
+docker-machine create agent1
+docker-machine create agent2
+```
+
 ## Check docker machine status
 
 ```
