@@ -1,6 +1,4 @@
-# docker_cmd_checklist
-
-# Command Set
+# Docker Swarm
 
 ## Create docker machine
 ```
@@ -42,6 +40,21 @@ docker swarm init
 export manager_token=`docker swarm join-token manager -q`
 export worker_token=`docker swarm join-token worker -q`
 ```
+
+## Create services using docker-compose
+
+```
+docker stack deploy -c <xxx.yml> <service_name>
+```
+
+## Check services
+
+```
+docker stack services <service_name>
+docker stack ps <service_name>
+```
+
+
 
 ## Remove all docker swarm services
 
