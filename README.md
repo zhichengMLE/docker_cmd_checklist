@@ -43,6 +43,12 @@ export manager_token=`docker swarm join-token manager -q`
 export worker_token=`docker swarm join-token worker -q`
 ```
 
+## Remove all docker swarm services
+
+```
+docker service rm $(docker service ls -q)
+```
+
 ## Create docker service
 ```
 docker service create -p 80:80 --name web nginx:latest
